@@ -1,1 +1,150 @@
+/* Lab 3 CSS Stylesheet */
 
+@media screen and (max-width: 600px) {
+    nav.desktop {
+        display: none;
+    }
+}
+@media screen and (min-width: 600px) {
+    nav.mobile {
+        display: none;
+    }
+}
+
+body {
+    background-color:#c7c7c7;
+    margin: auto;
+}
+
+header {
+    position: static;
+    background-color: darkgray;
+    color: rgb(0,0,0);
+    height: 100px;
+    margin-top: 1%;
+    margin-bottom: auto;
+    margin-left: 1%;
+    margin-right: 1%;
+    padding: 0% 0% 10% 0%;
+    border-style: solid;
+    border-color: rgb(100, 100, 100);
+    border-width: 2px;
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    min-width: 500px;
+}
+
+audio, details {
+    margin: 1%;
+}
+
+div.banner {
+    background-color: rgb(122, 122, 122);
+    position: sticky;
+    height:50px;
+    top:0px;
+}
+
+h3.bannertext {
+    padding: 15px;
+    color:black;
+}
+
+div.entries {
+    background-color: hsl(1,0%,50%);
+    font-size: x-large;
+    height: 1em;
+    padding-top: 1%;
+    padding-left: 1%;
+    padding-bottom: 1%;
+    padding-right: 1%;
+}
+
+section {
+    margin: 5% 1% 5% 1%;
+    border-style: solid;
+    border-radius: 5%;
+    padding: 2%;
+    min-width: 20%;
+    max-width:100%;
+}
+
+form {
+    display: grid;
+    gap: 15px 15px;
+    grid-template-columns: 50% 50%;
+}
+
+fieldset.general {
+    grid-column-start: 1;
+    grid-column-end: 1;
+}
+
+fieldset.options {
+    grid-column-start: 2;
+    grid-column-end: 2;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+a:active {
+    color:darkslateblue;
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline dotted;
+}
+
+p.important {
+    display: inline;
+    font-style: italic;
+
+}
+
+footer {
+    background-color: darkgray;
+}
+
+a.musiclink {
+    display:block;
+}
+
+img[src="20210409_132333.jpg"] {
+    border-style:solid;
+    border-width: 1px;
+    border-radius: 5%;
+}
+
+a.navbuttons {
+    width: 100%;
+    margin: 10px;
+    height: 10px;
+}
+
+#fire {
+    color:rgb(88, 0, 0);
+}
+
+ul.agenda li {
+    margin: 1%;
+}
+
+ul.agenda > li {
+    font-weight: bold;
+}
+
+img ~ p {
+    font-style: italic;
+}
+
+img + p {
+    font-weight: bold;
+}
